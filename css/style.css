@@ -6,7 +6,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,13,94,1) 0%, rgba(
 .main{
     
     margin-top: 7%;
-    left: 35%;
+    margin-left: calc(35% - 90px);
     position: relative;
     background-color: aliceblue;
     width: 600px;
@@ -24,7 +24,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,13,94,1) 0%, rgba(
     justify-content: flex-end;
 }
 
-.Numbers{
+#numeros{
     margin-top: 35px;
     font-size: 60px;
     color: aliceblue;
@@ -67,6 +67,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,13,94,1) 0%, rgba(
 button{
    outline: none; 
    border-width: 0;
+   font-size: 25px;
+   cursor: pointer;
+   background-color: aliceblue;
 }
 
 button:hover{
@@ -107,18 +110,12 @@ button:hover{
     height: 100%;
     margin: 0px;
 }
-#op{
-    width: 25%;
-    height: 100%;
-    margin: -4px;
-}
-
-#um{
+#zero{
     width: 25%;
     height: 100%;
     margin: 0px;
 }
-#dois{
+#virg{
     width: 25%;
     height: 100%;
     margin: -4px;
@@ -143,5 +140,5 @@ button:hover{
 #igual{
     width: 50%;
     height: 100%;
-    /* margin: -4px; */
+
 }
