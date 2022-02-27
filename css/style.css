@@ -1,0 +1,147 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,13,94,1) 0%, rgba(15,129,152,1) 100%);
+
+}
+.main{
+    
+    margin-top: 7%;
+    left: 35%;
+    position: relative;
+    background-color: aliceblue;
+    width: 600px;
+    height: 700px;
+    border-radius: 3% 3% 2% 2%;
+    box-shadow: 0 0 60px rgb(53, 51, 51) ;
+}
+.display{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(50, 50, 53);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Numbers{
+    margin-top: 35px;
+    font-size: 60px;
+    color: aliceblue;
+    margin-right: 10px;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+
+}
+.l1{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+.l2{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+.l3{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+.l4{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+.l5{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+button{
+   outline: none; 
+   border-width: 0;
+}
+
+button:hover{
+    background-color: rgb(50, 50, 53);
+    color: aliceblue;
+} 
+
+#ac{
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+}
+#del{
+    width: 25%;
+    height: 100%;
+    margin: -4px;
+    
+}
+#divi{
+    width: 25%;
+    height: 100%;
+    margin: 0px;
+}
+
+.um{
+    width: 25%;
+    height: 100%;
+    margin: 0px;
+}
+.dois{
+    width: 25%;
+    height: 100%;
+    margin: -4px;
+    
+}
+.tres{
+    width: 25%;
+    height: 100%;
+    margin: 0px;
+}
+#op{
+    width: 25%;
+    height: 100%;
+    margin: -4px;
+}
+
+#um{
+    width: 25%;
+    height: 100%;
+    margin: 0px;
+}
+#dois{
+    width: 25%;
+    height: 100%;
+    margin: -4px;
+    
+}
+#multi{
+    width: 25%;
+    height: 100%;
+    margin: -4px;
+}
+#mais{
+    width: 25%;
+    height: 100%;
+    margin: -4px;
+}
+
+#menos{
+    width: 25%;
+    height: 100%;
+    margin: -4px;
+}
+#igual{
+    width: 50%;
+    height: 100%;
+    /* margin: -4px; */
+}
