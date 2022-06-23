@@ -114,42 +114,42 @@ function nums(num) {
             aux = 1
             break;
         case "ac":
-            if (numeros == "0") {
+            if (numeros === "0") {
 
             }
             if (numeros.length <= 1) {
-                document.getElementById("numeros").innerText = "0";
+                Del()
             }
-            if (numeros != "0") {
+            if (numeros !== "0") {
                 let tamanho = numeros.length - 1
                 document.getElementById("numeros").innerText = numeros.substr(0, tamanho);
             }
             break;
         case "del":
-            document.getElementById("numeros").innerText = "0";
+            Del()
             aux = 0;
             break;
         case "multi":
             num1 = numeros
-            document.getElementById("numeros").innerText = "0";
+            Del()
             op = "multi"
             aux = 0;
             break;
         case "divi":
             num1 = numeros
-            document.getElementById("numeros").innerText = "0";
+            Del()
             op = "divi"
             aux = 0;
             break;
         case "mais":
             num1 = numeros
-            document.getElementById("numeros").innerText = "0";
+            Del()
             op = "mais"
             aux = 0;
             break;
         case "menos":
             num1 = numeros
-            document.getElementById("numeros").innerText = "0";
+            Del()
             op = "menos"
             aux = 0;
             break;
@@ -187,7 +187,10 @@ function nums(num) {
 
         function Inner(text){
             document.getElementById("numeros").innerText = text;
-        } 
+        }
+        function Del(){
+            document.getElementById("numeros").innerText = '0';
+        }
 
 
 }

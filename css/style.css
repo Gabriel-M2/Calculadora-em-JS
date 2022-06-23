@@ -1,17 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background: rgb(13,204,255);
     background: linear-gradient(90deg, rgba(13,204,255,1) 0%, rgba(71,96,255,1) 100%);
-
+    display: flex;
+    justify-content: center;
 }
 .main{
-    
-    margin-top: 7%;
-    margin-left: calc(35% - 90px);
-    position: relative;
+    min-width: 400px;
+    margin-top: 60px;
     background-color: aliceblue;
-    width: 600px;
-    height: 700px;
-    border-radius: 3% 3% 2% 2%;
+    width: 37.5rem;
+    height: 43.75rem;
+    border-radius: 20px 20px 0 0 ;
     box-shadow: 0 0 60px rgb(53, 51, 51) ;
 }
 .display{
@@ -19,7 +23,7 @@ body{
     width: 100%;
     height: 20%;
     background-color: rgb(50, 50, 53);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: flex-end;
 }
@@ -31,46 +35,23 @@ body{
     margin-right: 10px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: column;
-    width: 99%;
-    height: 80%;
-
 }
-.l1{
+.peq{
     display: block;
     width: 100%;
-    height: 20%;
-}
-.l2{
-    display: block;
-    width: 100%;
-    height: 20%;
-}
-.l3{
-    display: block;
-    width: 100%;
-    height: 20%;
-}
-.l4{
-    display: block;
-    width: 100%;
-    height: 20%;
-}
-.l5{
-    display: block;
-    width: 100%;
-    height: 20%;
+    height: 7rem;
 }
 button{
-   outline: none; 
-   border-width: 0;
-   font-size: 25px;
-   cursor: pointer;
-   background-color: aliceblue;
+    padding: 0;
+    outline: none;
+    border-width: 0;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: aliceblue;
 }
-
 button:hover{
     background-color: rgb(65, 65, 70);
     color: aliceblue;
@@ -79,65 +60,54 @@ button:hover{
 #ac{
     width: 50%;
     height: 100%;
-    margin: 0px;
+    margin: 0;
 }
 #del{
     width: 25%;
     height: 100%;
     margin: -4px;
-    
 }
 #divi{
     width: 25%;
     height: 100%;
-    margin: 0px;
+    margin: 0;
 }
-
-.um{
-    width: 25%;
-    height: 100%;
-    margin: 0px;
-}
-.dois{
-    width: 25%;
-    height: 100%;
-    margin: -4px;
-    
-}
-.tres{
-    width: 25%;
-    height: 100%;
-    margin: 0px;
+.num{
+    width: 9.18rem;
+    height: 7rem;
 }
 #zero{
     width: 25%;
     height: 100%;
-    margin: 0px;
-}
-#virg{
-    width: 25%;
-    height: 99%;
-    margin: -4px;
-    
-}
-#multi{
-    width: 25%;
-    height: 100%;
-    margin: -4px;
-}
-#mais{
-    width: 25%;
-    height: 100%;
-    margin: -4px;
-}
-
-#menos{
-    width: 25%;
-    height: 100%;
-    margin: -4px;
+    margin: 0;
 }
 #igual{
-    width: 49%;
+    width: 18.64rem;
     height: 100%;
+
+}
+
+
+@media (max-width: 660px)
+{
+   .main{
+       width: 100vw;
+       height: 88vh;
+       border-radius: 0;
+   }
+   .num{
+       width: 24vw;
+       height: 14vh;
+   }
+    #igual{
+        width: 50vw;
+    }
+   .display{
+       border-radius: 0;
+   }
+
+    .peq{
+        height: 14vh;
+    }
 
 }
