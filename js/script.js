@@ -11,94 +11,55 @@ function nums(num) {
         case 1:
 
             if (numeros.length < 20) {
-
-                if (numeros == "0") {
-                    Inner(1)
-                } else {
-                    Inner(numeros+1)
-                }
+                numeros === 0 ? Inner(1) : Inner(numeros+1)
             }
             break;
 
         case 2:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(2)
-                } else {
-                    Inner(numeros+2)
-                }
+                numeros === 0 ? Inner(2) : Inner(numeros+2)
             }
+
+            
             break;
         case 3:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(3)
-                } else {
-                    Inner(numeros+3)
-                }
+                numeros === 0 ? Inner(3) : Inner(numeros+3)
             }
             break;
         case 4:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(4)
-                } else {
-                    Inner(numeros+4)
-                }
+                numeros === 0 ? Inner(4) : Inner(numeros+4)
             }
             break;
         case 5:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(5)
-                } else {
-                    Inner(numeros+5)
-                }
+                numeros === 0 ? Inner(5) : Inner(numeros+5)
             }
             break;
         case 6:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(6)
-                } else {
-                    Inner(numeros+6)
-                }
+                numeros === 0 ? Inner(6) : Inner(numeros+6)
             }
             break;
         case 7:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(7)
-                } else {
-                    Inner(numeros+7)
-                }
+                numeros === 0 ? Inner(7) : Inner(numeros+7)
             }
             break;
         case 8:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(8)
-                } else {
-                    Inner(numeros+8)
-                }
+                numeros === 0 ? Inner(8) : Inner(numeros+8)
             }
             break;
         case 9:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-                    Inner(9)
-                } else {
-                    Inner(numeros+9)
-                }
+                numeros === 0 ? Inner(9) : Inner(numeros+9)
             }
             break;
         case 0:
             if (numeros.length < 20) {
-                if (numeros == "0") {
-
-                } else {
-                    Inner(numeros+0)
-                }
+                numeros === 0 ? Inner(0) : Inner(numeros+0)
                 break;
             }
         case ",":
@@ -187,6 +148,7 @@ function nums(num) {
 
         function Inner(text){
             document.getElementById("numeros").innerText = text;
+            numeros == "0" ? aux = 0 : aux = 1
         }
         function Del(){
             document.getElementById("numeros").innerText = '0';
